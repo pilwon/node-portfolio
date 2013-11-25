@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "description": "",
+  "description": "Portfolio library for Node.js",
   "version": "0.1.0",
   "license": "MIT",
   "author": {
