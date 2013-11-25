@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pilwon Huh",
+    "email": "pilwon@gmail.com"
+  },
+  "homepage": "https://github.com/pilwon/node-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pilwon/node-portfolio.git"
+  },
+  "keywords": [
+    "finance",
+    "portfolio",
+    "stock",
+    "ofx"
+  ],
+  "dependencies": {
+    "async": "~0.2.9",
+    "lodash": "~2.3.0",
+    "moment": "~2.4.0",
+    "string": "~1.7.0",
+    "xml2js": "~0.4.0"
+  },
+  "devDependencies": {
+    "colors": "~0.6.2",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "matchdep": "~0.3.0"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  }
+}
