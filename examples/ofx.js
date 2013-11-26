@@ -1,5 +1,5 @@
 /*
- * examples/all.js
+ * examples/ofx.js
  */
 
 'use strict';
@@ -28,13 +28,13 @@ fs.readFile(OFX_PATH, function (err, data) {
   var ofx = data.toString();
   portfolio.ofx.parse(ofx, function (err, result) {
     if (err) { throw err; }
-    // console.log('=== ofx -> js ===');
-    // console.log(util.inspect(result, { colors: true, depth: null }));
+    console.log('=== ofx -> js ===');
+    console.log(util.inspect(result, { colors: true, depth: null }));
 
     portfolio.ofx.format(result, function (err, ofx) {
       if (err) { throw err; }
-      // console.log('=== js -> ofx ===');
-      // console.log(ofx);
+      console.log('=== js -> ofx ===');
+      console.log(ofx);
 
       portfolio.ofx.parse(ofx, function (err, result) {
         if (err) { throw err; }
